@@ -5,6 +5,7 @@ import Admin from './pages/Admin.jsx'
 import Dashboardhome from './pages/Dashboardhome.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Student from './pages/Student.jsx'
+import StudentView from './pages/StudentView.jsx'
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboardhome />} />
         <Route path="/admin-setting" element={<Admin />} />
-        <Route path="/student" element={<Student />} />
-        {/* Add more routes as needed */}
+        <Route path="/student" element={<Student />} /> 
+        <Route path="/students12" element={<StudentView />} /> 
+       
       </Routes>
     </BrowserRouter>
     </div>

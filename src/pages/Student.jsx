@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Dashboard from './Dashboard';
+import { Link } from 'react-router-dom';
 
 function Student() {
   const [students, setStudents] = useState([
@@ -67,12 +68,12 @@ function Student() {
                   >
                     Delete
                   </button>
-                  <button
-                    onClick={() => handleDelete(student.id)}
-                    className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded ml-2"
+                  <Link
+                   to={`/students12`}
+                          className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded ml-2"
                   >
-                    View
-                  </button>
+                      View
+                  </Link>
                 </td>
               </tr>
             ))}
